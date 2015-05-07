@@ -1,0 +1,30 @@
+{
+	"name": "Super Badass Chick-Magnet Extension",
+	"version": "0.0.1",
+	"manifest_version": 2,
+	"description": "A Chrome extension to help attract the ladies (or dudes, if that's your thing).",
+	"icons": {
+		"16": "extension.png",
+		"48": "extension.png",
+		"128": "extension.png"
+	},
+	"browser_action": {
+			"default_title": "Super Badass Chick-Magnet Extension",    
+			"default_icon": "extension.png",  
+			"default_popup": "popup.html"
+	},
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"css": ["content_script.css"],
+			"js": ["jquery-2.1.3.min.js", "content_script.js"],
+			"run_at": "document_end",
+			"all_frames": true
+		}
+	],
+	"content_security_policy": "script-src 'self' https://code.jquery.com; object-src 'self'",
+	"permissions": [
+		"http://*/",
+		"https://*/"
+	]
+}
