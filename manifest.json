@@ -1,6 +1,6 @@
 {
 	"name": "Super Badass Chick-Magnet Extension",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"manifest_version": 2,
 	"description": "A Chrome extension to help attract the ladies (or dudes, if that's your thing).",
 	"icons": {
